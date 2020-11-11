@@ -32,6 +32,7 @@ defmodule Shape do
       2 * (rectangle.width + rectangle.height)
     end
 
+    @spec area(%{height: number, width: number}) :: number
     def area(rectangle) when rectangle.__struct__ == Rectangle do
       rectangle.width * rectangle.height
     end
